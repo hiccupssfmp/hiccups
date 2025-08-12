@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title> Welcome to Hiccups SFMP</title>
+    <link href="https://fonts.bunny.net/css?family=minecraftia" rel="stylesheet" />
+    <link rel="preload" href="Gastroe-Demo.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link href="style/stylesheet.css" rel="stylesheet">
+
+</head>
+<body class="minecraft-font content-between grid h-full">
+    <div class="relative">
+         <div class="flex justify-center bottom-[100%] w-full absolute ">
+            <div class="h-[700px] w-[80%] bg-white rounded-full mx-auto shadow-[0_360px_100px_0px_rgba(0,0,0,0.7)]">
+            </div>
+        </div>
+        <div class="header text-white pt-20 pb-10 z-10 relative minecraft-ten text-lg lg:text-2xl flex flex-col md:flex-row gap-5 md:gap-10 2xl:gap-20 items-center justify-center px-10">
+            <ul class="flex items-center -mt-10 gap-8 justify-center">
+                <li><a href="/" title="Coming Soon" class="link line-through">STORE</a></li>
+                <li><a href="/store" class="link">VOTE</a></li>
+            </ul>
+            <a href="/home">
+                <img src="/assets/images/logo.png" class="max-w-[280px]" alt="Hiccups Logo">
+            </a>
+            <ul class="flex items-center -mt-10 gap-8 justify-center">
+                <li><a href="/wiki" class="link">WIKI</a></li>
+                <li><a href="/more" class="link">MORE</a></li>
+            </ul>
+        </div>
+       
+        <div class="min-h-[80dvh] z-100 relative">
+            <div class="flex justify-center ">
+                <a href="minecraft://?addExternalServer=HiccupsSFMP|hiccups.minecraft.best" class="flex items-center gap-4 mt-4 bg-white p-2 rounded-full min-w-[200px] transition-all">
+                    <img src="assets/images/play.svg" class="drop-shadow-lg" alt="">
+                    <p class="minecraft-ten text-3xl -mt-2">PLAY</p>
+                </a>
+            </div>
+        </div>
+        
+        <div class="wrapper bg-[#f2e0c8] relative py-6 pb-16">
+            <img src="assets/images/bstript.png" class="absolute bottom-[calc(100%_-1px)] w-full " alt="">
+            <div class="grid grid-cols-2 gap-10 items-center max-w-[1300px] mx-auto">
+                <div>
+                    <img src="assets/images/connect.png" alt="">
+                </div>
+                <div>
+                    <span class="text-orange-500">WELCOME</span>
+                    <h2 class="text-5xl heading-font mb-4">How to Connect</h2>
+                    <ul class="gap-4 flex-col flex">
+                        <li class="flex gap-4 items-center">
+                            <div>
+                                <img src="assets/images/java.png" alt="java">
+                            </div>
+                            <div>
+                                <h4 class="minecraft-ten flex items-center gap-4">JAVA <a href="minecraft://?addExternalServer=MyServer|hiccups.minecraft.best" target="_blank"><img class="w-6 mt-1" src="assets/images/play.svg" alt="Play Java"></a></h4>
+                                <p class="flex items-center gap-4">hiccups.minecraft.best <img class="w-4 cursor-pointer" title="Copy Link" src="assets/images/copy.png" alt="Copy Link" onclick="copyIP('hiccups.minecraft.best')"></p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <div>
+                                <img src="assets/images/bedrock.png" alt="java">
+                            </div>
+                            <div>
+                                <h4 class="minecraft-ten flex items-center gap-4">BEDROCK <a href="minecraft://?addExternalServer=HiccupsSFMP|66.118.234.26:25565" target="_blank"><img class="w-6 mt-1" src="assets/images/play.svg" alt="Play Bedrock"></a></h4>
+                                <p class="flex items-center gap-4"><span>66.118.234.26:25565</span> <img class="w-4 cursor-pointer" title="Copy Link" src="assets/images/copy.png" alt="Copy Link" onclick="copyIP('66.118.234.26:25565')"></p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <div>
+                                <img src="assets/images/discord.png" alt="java">
+                            </div>
+                            <div>
+                                <h4 class="minecraft-ten">DISCORD</h4>
+                                <p class="flex items-center gap-4"><span>discord.gg/R34GdPR4J9</span> <img class="w-4 cursor-pointer" title="Copy Link" src="assets/images/copy.png" alt="Copy Link" onclick="copyIP('discord.gg/R34GdPR4J9')"></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img src="assets/images/b2striptt.png" class="absolute bottom-0 w-full " alt="">
+        </div>
+
+        <div class="wrapper bg-[#E8D3B6] py-16 relative tab-headings">
+            <div class="text-center">
+                <span class="text-orange-500">FEATURES</span>
+                <h2 class="text-5xl heading-font mb-4">Why Play <br> Hiccups SFMP?</h2>
+                <p class="para mb-4 max-w-lg mx-auto">Hiccups Realms has a ton of awesome features to improve your experience when playing alone or with your friends!</p>
+            </div>
+            <ul class="grid grid-cols-8 gap-4 max-w-[1300px] px-10 mx-auto" id="tab-buttons">
+                <li class="tab-button cursor-pointer gap-4 flex-col items-center" data-tab="slimefun">
+                    <div class="min-w-[50px]  mb-2 bg-white w-[100px] h-[100px] 2xl:w-[140px] 2xl:h-[140px] rounded-full flex justify-center items-center">
+                        <img src="assets/images/slime.png" alt="java">
+                    </div>
+                    <div class="text-center">
+                        <h4 class="minecraft-ten">SLIMEFUN</h4>
+                    </div>
+                </li>
+                <li class="tab-button cursor-pointer gap-4 flex-col items-center" data-tab="auraskill">
+                    <div class="min-w-[50px] mb-2 bg-white w-[100px] h-[100px] 2xl:w-[140px] 2xl:h-[140px] rounded-full flex justify-center items-center">
+                        <img src="assets/images/aura.png" alt="java">
+                    </div>
+                    <div class="text-center">
+                        <h4 class="minecraft-ten">AURASKILL</h4>
+                    </div>
+                </li>
+                <li class="tab-button cursor-pointer gap-4 flex-col items-center" data-tab="quests">
+                    <div class="min-w-[50px] mb-2 bg-white w-[100px] h-[100px] 2xl:w-[140px] 2xl:h-[140px] rounded-full flex justify-center items-center">
+                        <img src="assets/images/quests.png" alt="java">
+                    </div>
+                    <div class="text-center">
+                        <h4 class="minecraft-ten">QUESTS</h4>
+                    </div>
+                </li>
+                <li class="tab-button cursor-pointer gap-4 flex-col items-center" data-tab="koth">
+                    <div class="min-w-[50px] mb-2 bg-white w-[100px] h-[100px] 2xl:w-[140px] 2xl:h-[140px] rounded-full flex justify-center items-center">
+                        <img src="assets/images/pvp.png" alt="java">
+                    </div>
+                    <div class="text-center">
+                        <h4 class="minecraft-ten">PVP/KOTH</h4>
+                    </div>
+                </li>
+                <li class="tab-button cursor-pointer gap-4 flex-col items-center" data-tab="pyrofish">
+                    <div class="min-w-[50px] mb-2 bg-white w-[100px] h-[100px] 2xl:w-[140px] 2xl:h-[140px] rounded-full flex justify-center items-center">
+                        <img src="assets/images/fish.png" alt="java">
+                    </div>
+                    <div class="text-center">
+                        <h4 class="minecraft-ten">PYROFISHING</h4>
+                    </div>
+                </li>
+                <li class="tab-button cursor-pointer gap-4 flex-col items-center" data-tab="pyromine">
+                    <div class="min-w-[50px] mb-2 bg-white w-[100px] h-[100px] 2xl:w-[140px] 2xl:h-[140px] rounded-full flex justify-center items-center">
+                        <img src="assets/images/mine.png" alt="java">
+                    </div>
+                    <div class="text-center">
+                        <h4 class="minecraft-ten">PYROMINING</h4>
+                    </div>
+                </li>
+                <li class="tab-button cursor-pointer gap-4 flex-col items-center" data-tab="towny">
+                    <div class="min-w-[50px]  mb-2 bg-white w-[100px] h-[100px] 2xl:w-[140px] 2xl:h-[140px] rounded-full flex justify-center items-center">
+                        <img src="assets/images/towny.png" alt="java">
+                    </div>
+                    <div class="text-center">
+                        <h4 class="minecraft-ten">LANDS</h4>
+                    </div>
+                </li>
+                <li class="tab-button cursor-pointer gap-4 flex-col items-center" data-tab="jobs">
+                    <div class="min-w-[50px] mb-2 bg-white w-[100px] h-[100px] 2xl:w-[140px] 2xl:h-[140px] rounded-full flex justify-center items-center">
+                        <img src="assets/images/jobs.png" alt="java">
+                    </div>
+                    <div class="text-center">
+                        <h4 class="minecraft-ten">JOBS</h4>
+                    </div>
+                </li>
+            </ul>
+            <img src="assets/images/b2stripb.png" class="absolute top-[100%] w-full  z-10" alt="">
+        </div>
+
+        <div class="tab-content   bg-black relative  tab-content" data-tab-content="slimefun">
+            <div class=" mx-auto flex justify-end items-center mx-auto">
+                <div class="grid grid-cols-2">
+                    <div><img src="../assets/images/slimefun.png" class="h-full object-cover"  alt=""></div>
+                    <div class="bg-black/100 py-[200px] px-[80px]">
+                        <span class="text-orange-500">/sf guide</span>
+                        <h2 class="heading-font text-5xl mb-10 text-[#F2E0C8]">Slimefun</h2>
+                        <p class="text-[#F2E0C8]">It offers everything you could possibly imagine. From Backpacks to Jetpacks! Slimefun lets every player decide on their own how much they want to dive into Magic or Tech.
+    We got everything from magical wands to nuclear reactors.
+    We feature a magical altar, an electric power grid and even item transport systems.</p>  
+    <br>
+    <a href="https://github.com/Slimefun/Slimefun4/wiki" class="text-cyan-500">Slimefun Wiki</a>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/images/bbstripb.png" class="absolute  bottom-0 w-full  z-10" alt="">
+        </div>
+        <div class="tab-content hidden bg-black relative  tab-content" data-tab-content="auraskill">
+            <div class=" mx-auto flex justify-end items-center mx-auto">
+                <div class="grid grid-cols-2">
+                    <div><img src="../assets/images/auraskill.png"class="h-full object-cover"  alt=""></div>
+                    <div class="bg-black/100 py-[200px] px-[80px]">
+                        <span class="text-orange-500">/skills</span>
+                        <h2 class="heading-font text-5xl mb-10 text-[#F2E0C8]">Aura Skills</h2>
+                        <p class="text-[#F2E0C8]">KOTH stands for King of the Hill, a PvP-based event where teams or solo players fight to control a specific area (the “hill”) for a certain amount of time. The player or group who manages to stay on top the longest wins the event and earns powerful rewards!</p>  
+                    </div>
+                </div>
+            </div>
+            <img src="assets/images/bbstripb.png" class="absolute  bottom-0 w-full  z-10" alt="">
+        </div>
+        <div class="tab-content hidden bg-black relative bg-cover  tab-content" data-tab-content="quests">
+            <div class=" mx-auto flex justify-end items-center mx-auto">
+                <div class="grid grid-cols-2">
+                    <div><img src="../assets/images/quests-lg.png"class="h-full object-cover"  alt=""></div>
+                    <div class="bg-black/100 py-[200px] px-[80px]">
+                        <span class="text-orange-500">/quests</span>
+                        <h2 class="heading-font text-5xl mb-10 text-[#F2E0C8]">Quests</h2>
+                        <p class="text-[#F2E0C8]">KOTH stands for King of the Hill, a PvP-based event where teams or solo players fight to control a specific area (the “hill”) for a certain amount of time. The player or group who manages to stay on top the longest wins the event and earns powerful rewards!</p>  
+                        <h2 class="text-3xl text-cyan-500">Coming Soon</h2>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/images/bbstripb.png" class="absolute  bottom-0 w-full  z-10" alt="">
+        </div>
+        <div class="tab-content hidden bg-black relative bg-cover tab-content" data-tab-content="koth">
+            <div class=" mx-auto flex justify-end items-center mx-auto">
+                <div class="grid grid-cols-2">
+                    <div><img src="../assets/images/kothbg.png" class="h-full object-cover" alt=""></div>
+                    <div class="bg-black/100 py-[200px] px-[80px]">
+                        <span class="text-orange-500">/warp koth</span>
+                        <h2 class="heading-font text-5xl mb-10 text-[#F2E0C8]">King of The Hill</h2>
+                        <p class="text-[#F2E0C8]">KOTH stands for King of the Hill, a PvP-based event where teams or solo players fight to control a specific area (the “hill”) for a certain amount of time. The player or group who manages to stay on top the longest wins the event and earns powerful rewards!</p>  
+                    </div>
+                </div>
+            </div>
+            <img src="assets/images/bbstripb.png" class="absolute  bottom-0 w-full  z-10" alt="">
+        </div>
+        <div class="tab-content hidden bg-black relative bg-cover tab-content" data-tab-content="pyrofish">
+            <div class=" mx-auto flex justify-end items-center mx-auto">
+                <div class="grid grid-cols-2">
+                    <div><img src="../assets/images/fishing.png"  class="h-full object-cover"  alt=""></div>
+                    <div class="bg-black/100 py-[200px] px-[80px]">
+                        <span class="text-orange-500">/fish menu</span>
+                        <h2 class="heading-font text-5xl mb-10 text-[#F2E0C8]">Pyrofishing</h2>
+                        <p class="text-[#F2E0C8]">PyroFishing is a popular Minecraft plugin that enhances the fishing experience by adding custom fish, fishing levels, entropy, augments, and fishing totems. It aims to provide a more engaging and feature-rich fishing system within the game, going beyond the basic vanilla fishing.
+                            <br><br>
+                            <b class="opacity-50">Custom Fish:</b>
+                        Introduces a variety of unique fish with different tiers and associated XP for fishing level progression. <br><br>
+                        <b class="opacity-50">Fishing Level:</b>
+                        Players gain experience and level up their fishing skill by catching custom fish, unlocking new possibilities. <br><br>
+                        <b class="opacity-50">Entropy:</b>
+                        A resource used in crafting augments for fishing rods, adding special effects and enhancements. <br><br>
+                        <b class="opacity-50">Augments:</b>
+                        "Enchants" for fishing rods that can be crafted with ingredients and entropy, offering various advantages. <br><br>
+                        <b class="opacity-50">Fishing Totems:</b>
+                        Advanced structures that can be built to further enhance fishing capabilities, requiring specific ingredients and entropy. 
+                        </p>  
+                    </div>
+                </div>
+            </div>
+            <img src="assets/images/bbstripb.png" class="absolute  bottom-0 w-full  z-10" alt="">
+        </div>
+        <div class="tab-content hidden bg-black relative tab-content" data-tab-content="pyromine">
+            <div class="mx-auto flex justify-end items-center mx-auto">
+                <div class="grid grid-cols-2">
+                    <div><img src="../assets/images/pyromining.png" class="h-full object-cover" alt=""></div>
+                    <div class="bg-black/100 py-[200px] px-[80px]">
+                        <span class="text-orange-500">/mine menu</span>
+                        <h2 class="heading-font text-5xl mb-10 text-[#F2E0C8]">Pyromining</h2>
+                        <p class="text-[#F2E0C8] max-h-[400px] overflow-auto">
+                            <b class="opacity-50">Custom Enchantments:</b>
+    PyroMining introduces custom enchantments for pickaxes, allowing for unique and powerful mining abilities.
+       <br/>  
+    <br/>  
+    <b class="opacity-50">Artifacts:</b>
+    The plugin enables the identification and collection of artifacts, which can be found while mining or obtained from other sources. 
+    <br/>  
+    <br/>  
+    <b class="opacity-50">Vessels:</b>
+    Vessels are custom enchantments that can be applied to pickaxes, and can be crafted using materials obtained through the plugin's features. 
+    <br/>  
+    <br/>  
+    
+    <b class="opacity-50">Runes:</b>
+    Players can obtain runes by defeating rune guardians, which are creatures that appear after using rune dust on redstone ore. 
+    <br/>  
+    <br/>  
+    
+    <b class="opacity-50">Refinery:</b>
+    The refinery is a contraption where players can process mysterious dust, which is a byproduct of mining, into other useful items, like rune dust. 
+    <br/>  
+    <br/>  
+    
+    <b class="opacity-50">Rune Guardians:</b>
+    These are bosses that can be summoned by using rune dust on redstone ore and drop runes upon defeat. 
+    <br/>  
+    <br/>  
+    
+    <b class="opacity-50">Leveling Singularity:</b>
+    Runes can be used to level up the "singularity," which unlocks various perks and abilities for the player. 
+    Overall, PyroMining transforms the vanilla mining experience into a more engaging and rewarding activity with its unique features and progression system. 
+    
+    </p>  
+                    </div>
+                </div>
+            </div>
+            <img src="assets/images/bbstripb.png" class="absolute  bottom-0 w-full  z-10" alt="">
+        </div>
+        <div class="tab-content  bg-black hidden relative tab-content" data-tab-content="towny">
+            <div class=" mx-auto flex justify-end items-center mx-auto">
+                <div class="grid grid-cols-2">
+                    <div><img src="../assets/images/towny-lg.png"  class="h-full object-cover" alt=""></div>
+                    <div class="bg-black/100 py-[200px] px-[80px]">
+                        <span class="text-orange-500">/land create landname</span>
+                        <h2 class="heading-font text-5xl mb-10 text-[#F2E0C8]">Lands</h2>
+                        <p class="text-[#F2E0C8]">The Lands plugin for Minecraft servers is a land management and land/nation simulation tool. It allows players to create lands, claim and protect land, and form nations, offering a structured environment for community building and territorial control. It's a great way to add depth and role-playing elements to your claims.</p>  
+                    </div>
+                </div>
+            </div>
+            <img src="assets/images/bbstripb.png" class="absolute  bottom-0 w-full  z-10" alt="">
+        </div>
+        <div class="tab-content hidden bg-black relative tab-content" data-tab-content="jobs">
+            <div class="mx-auto flex justify-end items-center mx-auto">
+                <div class="grid grid-cols-2">
+                    <div><img src="../assets/images/job.png"  class="h-full object-cover" alt=""></div>
+                    <div class="bg-black/100 py-[200px] px-[80px]">
+                        <span class="text-orange-500">/jobs browse</span>
+                        <h2 class="heading-font text-5xl mb-10 text-[#F2E0C8]">Jobs 💼 </h2>
+                        <p class="text-[#F2E0C8]"> Jobs – Earn Money Doing What You Love!
+Tired of being broke on the server? With the Jobs system, you can start making money just by doing what you're already good at! Whether you're mining, building, fishing, or hunting mobs — there's a job for you.
+<br><br>
+<b class="opacity-50">🧱 How it works:</b>
+You can join up to a few jobs at once (depending on server limits). As you play and do actions related to your job, you’ll automatically earn money, experience, and job levels.
+<br><br>
+<b class="opacity-50">🛠️ Examples:</b>
+
+ <br>
+Miner – Get paid for breaking ores and stone. <br>
+
+Fisherman – Earn money with every catch. <br>
+
+Hunter – Slay mobs for cash rewards.  <br>
+
+Farmer – Harvest crops and get paid.<br>
+
+Builder – Place blocks to earn income.<br>
+
+ <br>
+The more you work in a job, the more you level up, and higher levels usually mean better pay.</p>  
+                    </div>
+                </div>
+            </div>
+            <img src="assets/images/bbstripb.png" class="absolute  bottom-0 w-full  z-10" alt="">
+        </div>
+        <div class="bg-[#BD8C51] bg-cover py-[100px] relative">
+            <div class="max-w-[1300px] mx-auto flex justify-end items-centermx-auto">
+                <div class=" max-w-[400px] mx-auto">
+                    <span class="text-black-500">LIKE | SHARE</span>
+                    <h2 class="heading-font text-5xl mb-10 text-[#fff]">Follow Us</h2>
+                    <ul class="flex bg-white p-4 rounded-xl gap-4">
+                        <li><a href=""><img src="assets/images/fb.png" alt="social"></a></li>
+                        <!-- <li><a href=""><img src="assets/images/tik.png" alt="social"></a></li> -->
+                        <li><a href=""><img src="assets/images/insta.png" alt="social"></a></li>
+                        <li><a href=""><img src="assets/images/yt.png" alt="social"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center my-6">
+                <span class="bg-white py-2 px-4 inline-flex rounded-full ">© 2024 <span class="minecraft-ten mx-2 -mt-[2px]">HICCUPS SFMP</span>. MINECRAFT SERVER</span>
+            </div>
+            <!-- <img src="assets/images/bbstripb.png" class="absolute bottom-0 w-full " alt=""> -->
+        </div>
+    </div>
+
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".tab-button");
+    const contents = document.querySelectorAll(".tab-content");
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const target = btn.getAttribute("data-tab");
+
+            // Remove active class from all buttons
+            buttons.forEach(b => b.classList.remove("active-tab"));
+
+            // Hide all tab content
+            contents.forEach(c => c.classList.add("hidden"));
+
+            // Show the selected one
+            const targetContent = document.querySelector(`[data-tab-content="${target}"]`);
+            if (targetContent) targetContent.classList.remove("hidden");
+
+            // Add active class to current button
+            btn.classList.add("active-tab");
+        });
+    });
+
+    // Trigger first tab by default
+    if (buttons[0]) buttons[0].click();
+});
+
+function copyIP(ip) {
+    navigator.clipboard.writeText(ip)
+      .then(() => alert("Text copied to clipboard"))
+      .catch(err => console.error("Copy failed:", err));
+  }
+</script>
+</html>
