@@ -41,7 +41,7 @@ p,h3,span{
     }
 }
 body{
-    background:url(/assets/images/newbanner.png) center center / cover fixed ;
+    background:url(../assets/images/newbanner.png) center center / cover fixed ;
 }
 
 .minecraft-ten {
